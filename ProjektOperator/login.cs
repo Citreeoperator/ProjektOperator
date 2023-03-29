@@ -71,6 +71,7 @@ namespace ProjektOperator
         private void login_Load(object sender, EventArgs e)
         {
             this.FormClosing += new FormClosingEventHandler(login_FormClosing);
+            txt_username.Focus();
         }
 
         private void btn_close_Click(object sender, EventArgs e)

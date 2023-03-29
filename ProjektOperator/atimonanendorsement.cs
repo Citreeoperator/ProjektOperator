@@ -127,6 +127,36 @@ namespace ProjektOperator
             }
         }
 
+        private void check_mon7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (check_mon7.Checked == true)
+            {
+                txt_mon7.Enabled = false;
+                txt_mon7.Text = "No blackouts";
+            }
+            else
+            {
+                txt_mon7.Enabled = true;
+                txt_mon7.Text = "";
+            }
+        }
+
+        private void check_mon8_CheckedChanged(object sender, EventArgs e)
+        {
+            if (check_mon8.Checked == true)
+            {
+                txt_mon8.Enabled = false;
+                txt_mon8.Text = "No blackouts";
+            }
+            else
+            {
+                txt_mon8.Enabled = true;
+                txt_mon8.Text = "";
+            }
+        }
+
+
+
         private void radio_no_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_no.Checked == true)
@@ -143,6 +173,10 @@ namespace ProjektOperator
                 check_mon5.Checked = true;
                 txt_mon6.Enabled = false;
                 check_mon6.Checked = true;
+                txt_mon7.Enabled = false;
+                check_mon7.Checked = true;
+                txt_mon8.Enabled = false;
+                check_mon8.Checked = true;
             }
             else
             {
@@ -158,13 +192,25 @@ namespace ProjektOperator
                 check_mon5.Checked = false;
                 txt_mon6.Enabled = true;
                 check_mon6.Checked = false;
+                txt_mon7.Enabled = true;
+                check_mon7.Checked = false;
+                txt_mon8.Enabled = true;
+                check_mon8.Checked = false;
+
             }
         }
 
         private void btn_addcam_Click(object sender, EventArgs e)
         {
-            previewbox_generate.Text = previewbox_generate.Text + "\n\nCamera Status:"
-              + "\n Monitor 1: " + txt_mon1.Text + " Cameras" + "\n Monitor 2: " + txt_mon2.Text + " Cameras" + "\n Monitor 3: " + txt_mon3.Text + " Cameras" + "\n Monitor 4: " + txt_mon4.Text + " Cameras" + "\n Monitor 5: " + txt_mon5.Text + " Cameras" + "\n Monitor 6: " + txt_mon6.Text + " Cameras";
+            previewbox_generate.Text = previewbox_generate.Text + "\n\nOffline Cameras - Camera Status:"
+              + "\n Monitor 1: " + txt_mon1.Text + " Cameras" 
+              + "\n Monitor 2: " + txt_mon2.Text + " Cameras" 
+              + "\n Monitor 3: " + txt_mon3.Text + " Cameras" 
+              + "\n Monitor 4: " + txt_mon4.Text + " Cameras" 
+              + "\n Monitor 5: " + txt_mon5.Text + " Cameras" 
+              + "\n Monitor 6: " + txt_mon6.Text + " Cameras"
+              + "\n Monitor 7: " + txt_mon7.Text + " Cameras"
+              + "\n Monitor 8: " + txt_mon8.Text + " Cameras";
             btn_addcam.Enabled = false;
         }
 
@@ -240,6 +286,32 @@ namespace ProjektOperator
             }
         }
 
+        private void txt_mon7_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_mon7.Text))
+            {
+                check_mon7.Enabled = true;
+            }
+            else
+            {
+                check_mon7.Enabled = false;
+            }
+        }
+
+        private void txt_mon8_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txt_mon8.Text))
+            {
+                check_mon8.Enabled = true;
+            }
+            else
+            {
+                check_mon8.Enabled = false;
+            }
+        }
+
+
+
         private void radio_ir_no_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_ir_no.Checked == true)
@@ -264,7 +336,12 @@ namespace ProjektOperator
         {
             if (radio_ir_yes.Checked == true)
             {
-                previewbox_generate.Text = previewbox_generate.Text + "\n\nIncident Report: \nWhat: " + txt_ir_what.Text + "\nWhen: " + txt_ir_when.Text + "\nWhere: " + txt_ir_where.Text + "\nInvolved: " + txt_ir_involve.Text + "\nAdditional Info: " + txt_ir_add.Text;
+                previewbox_generate.Text = previewbox_generate.Text + "\n\nIncident Report: " +
+                    "\nWhat: " + txt_ir_what.Text + 
+                    "\nWhen: " + txt_ir_when.Text + 
+                    "\nWhere: " + txt_ir_where.Text + 
+                    "\nInvolved: " + txt_ir_involve.Text + 
+                    "\nAdditional Info: " + txt_ir_add.Text;
             }
             else
             {
@@ -379,5 +456,7 @@ namespace ProjektOperator
                 radio_cctv_no.Checked = true;
             }
         }
+
+
     }
 }
