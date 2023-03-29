@@ -187,6 +187,7 @@
             // 
             // bg_worker
             // 
+            this.bg_worker.WorkerReportsProgress = true;
             this.bg_worker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bg_worker_DoWork);
             this.bg_worker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bg_worker_ProgressChanged);
             this.bg_worker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bg_worker_RunWorkerCompleted);
@@ -238,6 +239,6 @@
         private System.Windows.Forms.TextBox txt_output_path;
         private System.Windows.Forms.Button btn_open;
         private System.Windows.Forms.TextBox txt_open_path;
-        private System.ComponentModel.BackgroundWorker bg_worker;
+        internal System.ComponentModel.BackgroundWorker bg_worker;
     }
 }

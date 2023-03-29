@@ -40,15 +40,20 @@
             this.btn_login = new System.Windows.Forms.Button();
             this.lbl_username = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
+            this.pnl_task = new System.Windows.Forms.Panel();
+            this.lbl_programname = new System.Windows.Forms.Label();
+            this.btn_close = new System.Windows.Forms.Button();
             this.pnl_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_c3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_mdr)).BeginInit();
             this.pnl_bot.SuspendLayout();
+            this.pnl_task.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_top
             // 
             this.pnl_top.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(26)))), ((int)(((byte)(36)))));
+            this.pnl_top.Controls.Add(this.pnl_task);
             this.pnl_top.Controls.Add(this.pic_c3);
             this.pnl_top.Controls.Add(this.pic_mdr);
             this.pnl_top.Controls.Add(this.lbl_title);
@@ -61,9 +66,9 @@
             // pic_c3
             // 
             this.pic_c3.Image = ((System.Drawing.Image)(resources.GetObject("pic_c3.Image")));
-            this.pic_c3.Location = new System.Drawing.Point(652, 3);
+            this.pic_c3.Location = new System.Drawing.Point(652, 33);
             this.pic_c3.Name = "pic_c3";
-            this.pic_c3.Size = new System.Drawing.Size(109, 97);
+            this.pic_c3.Size = new System.Drawing.Size(81, 67);
             this.pic_c3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_c3.TabIndex = 6;
             this.pic_c3.TabStop = false;
@@ -71,9 +76,9 @@
             // pic_mdr
             // 
             this.pic_mdr.Image = ((System.Drawing.Image)(resources.GetObject("pic_mdr.Image")));
-            this.pic_mdr.Location = new System.Drawing.Point(22, 0);
+            this.pic_mdr.Location = new System.Drawing.Point(63, 25);
             this.pic_mdr.Name = "pic_mdr";
-            this.pic_mdr.Size = new System.Drawing.Size(126, 103);
+            this.pic_mdr.Size = new System.Drawing.Size(85, 78);
             this.pic_mdr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_mdr.TabIndex = 5;
             this.pic_mdr.TabStop = false;
@@ -83,7 +88,7 @@
             this.lbl_title.AutoSize = true;
             this.lbl_title.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_title.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbl_title.Location = new System.Drawing.Point(154, 14);
+            this.lbl_title.Location = new System.Drawing.Point(154, 25);
             this.lbl_title.Name = "lbl_title";
             this.lbl_title.Size = new System.Drawing.Size(492, 75);
             this.lbl_title.TabIndex = 0;
@@ -165,6 +170,42 @@
             this.lbl_password.Text = "Password:";
             this.lbl_password.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pnl_task
+            // 
+            this.pnl_task.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(16)))), ((int)(((byte)(15)))));
+            this.pnl_task.Controls.Add(this.btn_close);
+            this.pnl_task.Controls.Add(this.lbl_programname);
+            this.pnl_task.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_task.Location = new System.Drawing.Point(0, 0);
+            this.pnl_task.Name = "pnl_task";
+            this.pnl_task.Size = new System.Drawing.Size(800, 27);
+            this.pnl_task.TabIndex = 7;
+            // 
+            // lbl_programname
+            // 
+            this.lbl_programname.AutoSize = true;
+            this.lbl_programname.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_programname.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_programname.Location = new System.Drawing.Point(0, 6);
+            this.lbl_programname.Name = "lbl_programname";
+            this.lbl_programname.Size = new System.Drawing.Size(204, 15);
+            this.lbl_programname.TabIndex = 3;
+            this.lbl_programname.Text = "Project OPERATOR - BlackOps Edition";
+            // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btn_close.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Image = ((System.Drawing.Image)(resources.GetObject("btn_close.Image")));
+            this.btn_close.Location = new System.Drawing.Point(760, 0);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(40, 27);
+            this.btn_close.TabIndex = 4;
+            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
             // login
             // 
             this.AcceptButton = this.btn_login;
@@ -188,12 +229,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
             this.TopMost = true;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
+            this.Load += new System.EventHandler(this.login_Load);
             this.pnl_top.ResumeLayout(false);
             this.pnl_top.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_c3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_mdr)).EndInit();
             this.pnl_bot.ResumeLayout(false);
             this.pnl_bot.PerformLayout();
+            this.pnl_task.ResumeLayout(false);
+            this.pnl_task.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +257,8 @@
         private System.Windows.Forms.Label lbl_username;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Label lbl_copyright;
+        private System.Windows.Forms.Panel pnl_task;
+        private System.Windows.Forms.Label lbl_programname;
+        private System.Windows.Forms.Button btn_close;
     }
 }

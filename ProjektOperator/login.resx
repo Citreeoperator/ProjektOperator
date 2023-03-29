@@ -118,10 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btn_close.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAMRJREFUSEvtldEOwiAMRfkJjftE97n6sM/BU9MmxEIoQ952kmaM3t67bETTxTA5
+        5yd119swMiOzelsHwU4JbyocIlqdEXbd9tC8Ua+vLOeD2rTVBM3vzENbdRCEQ+iNmRsIuyHsnTM3GGiG
+        sJ4zNxh0IdR/zA0MyhMi13I9fJyrYFQ+tTD/5CWY1QK6RzgERuteEQbug1Luw6t8DAabp4X1XAgDTXOD
+        vXMhCLvmBr2xEARhcwNNPITm2p9rAcG6P5wLT0ofqoAc3jYCQt8AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="pic_c3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAALohJREFUeF7tfQdYFOf2fgCNsebGmMSbXI01sTdiiSaxi70isPQmAiJVem+CdFBE
+        wQAADsEBuJFr7QAALohJREFUeF7tfQdYFOf2fgCNsebGmMSbXI01sTdiiSaxi70isPQmAiJVem+CdFBE
         QWygqKDYS+y9t9hLijFG06zY2X3/53xb2IUFMTf53/u77Pc87zMzX5uZc95TvplZeENXdEVXdEVXdEVX
         dEVXdEVXdEVXdEVXdOX/SjEcHV6vYXvbtvU/tRhQu425ea025l4GbSQzCdn6rSWF+q3Nthu0Njuq38r0
         vH4rs+/0W5v+XKu15A+D1pL7+i3NHuq1MH3E21ptzO4atDH7Ra+l2Q0ae4X6niTs1W8jWUdtS6h/Sq22
@@ -326,7 +335,7 @@
   <data name="pic_mdr.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABw8AAAcPCAYAAADXSr5HAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7s3XecFFXa9+Hq3BN68gwZBRUFFRURVFRUVMw551VMq+6uugbMoqKC
+        EAAACxABrSO9dQAA/7JJREFUeF7s3XecFFXa9+Hq3BN68gwZBRUFFRURVFRUVMw551VMq+6uugbMoqKC
         5ChIzjkzA8zAwJCRLEbUVTcY1hzXdff3nlPdPcy0JYg+r67294/rUz13ha54qubcfU45kgAAAAAAAAAA
         AADA8QwCAAAAAAAAAAAASD+eQQAAAAAAAAAAAADpxzMIAAAAAAAAAAAAIP14BgEAAAAAAAAAAACkH88g
         AAAAAAAAAAAAgPTjGQQAAAAAAAAAAACQfjyDAAAAAAAAAAAAANKPZxAAAAAAAAAAAABA+vEMAgAAAAAA

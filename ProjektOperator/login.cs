@@ -59,5 +59,31 @@ namespace ProjektOperator
         {
             lbl_copyright.Text = "© " + DateTime.Now.Year.ToString() + " C3 - Project Operator - " + Application.ProductVersion + " - SkyeTech - All Rights Reserved.";
         }
+
+        private void login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if ((Control.ModifierKeys & Keys.Alt) == Keys.Alt && e.CloseReason == CloseReason.UserClosing)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            this.FormClosing += new FormClosingEventHandler(login_FormClosing);
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to exit?", "Project OPERATOR", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            else
+            {
+                //Do nothing
+            }
+        }
     }
 }

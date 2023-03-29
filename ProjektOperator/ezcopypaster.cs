@@ -87,7 +87,15 @@ namespace ProjektOperator
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DialogResult dialogResult = MessageBox.Show("Close the EZCopypaster?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                this.Hide();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //Do nothing
+            }
         }
     }
 }
