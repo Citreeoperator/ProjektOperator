@@ -49,6 +49,12 @@
             this.check_mon6 = new System.Windows.Forms.CheckBox();
             this.txt_mon4 = new System.Windows.Forms.TextBox();
             this.grp_camera = new System.Windows.Forms.GroupBox();
+            this.check_mon8 = new System.Windows.Forms.CheckBox();
+            this.txt_mon8 = new System.Windows.Forms.TextBox();
+            this.lbl_monitor8 = new System.Windows.Forms.Label();
+            this.check_mon7 = new System.Windows.Forms.CheckBox();
+            this.txt_mon7 = new System.Windows.Forms.TextBox();
+            this.lbl_monitor7 = new System.Windows.Forms.Label();
             this.lbl_monitor4 = new System.Windows.Forms.Label();
             this.check_mon3 = new System.Windows.Forms.CheckBox();
             this.txt_mon3 = new System.Windows.Forms.TextBox();
@@ -101,12 +107,6 @@
             this.radio_ir_yes = new System.Windows.Forms.RadioButton();
             this.lbl_incident = new System.Windows.Forms.Label();
             this.previewbox_generate = new System.Windows.Forms.RichTextBox();
-            this.check_mon7 = new System.Windows.Forms.CheckBox();
-            this.txt_mon7 = new System.Windows.Forms.TextBox();
-            this.lbl_monitor7 = new System.Windows.Forms.Label();
-            this.check_mon8 = new System.Windows.Forms.CheckBox();
-            this.txt_mon8 = new System.Windows.Forms.TextBox();
-            this.lbl_monitor8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.grp_camera.SuspendLayout();
             this.grp_reportingtools.SuspendLayout();
@@ -350,6 +350,70 @@
             this.grp_camera.TabIndex = 33;
             this.grp_camera.TabStop = false;
             this.grp_camera.Text = "Camera Status";
+            // 
+            // check_mon8
+            // 
+            this.check_mon8.AutoSize = true;
+            this.check_mon8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_mon8.Location = new System.Drawing.Point(411, 119);
+            this.check_mon8.Name = "check_mon8";
+            this.check_mon8.Size = new System.Drawing.Size(94, 17);
+            this.check_mon8.TabIndex = 42;
+            this.check_mon8.Text = "No blackouts";
+            this.check_mon8.UseVisualStyleBackColor = true;
+            this.check_mon8.CheckedChanged += new System.EventHandler(this.check_mon8_CheckedChanged);
+            // 
+            // txt_mon8
+            // 
+            this.txt_mon8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_mon8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mon8.Location = new System.Drawing.Point(271, 118);
+            this.txt_mon8.Name = "txt_mon8";
+            this.txt_mon8.Size = new System.Drawing.Size(134, 22);
+            this.txt_mon8.TabIndex = 41;
+            this.txt_mon8.TextChanged += new System.EventHandler(this.txt_mon8_TextChanged);
+            // 
+            // lbl_monitor8
+            // 
+            this.lbl_monitor8.AutoSize = true;
+            this.lbl_monitor8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_monitor8.Location = new System.Drawing.Point(268, 102);
+            this.lbl_monitor8.Name = "lbl_monitor8";
+            this.lbl_monitor8.Size = new System.Drawing.Size(64, 13);
+            this.lbl_monitor8.TabIndex = 43;
+            this.lbl_monitor8.Text = "Monitor SB";
+            // 
+            // check_mon7
+            // 
+            this.check_mon7.AutoSize = true;
+            this.check_mon7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.check_mon7.Location = new System.Drawing.Point(411, 77);
+            this.check_mon7.Name = "check_mon7";
+            this.check_mon7.Size = new System.Drawing.Size(94, 17);
+            this.check_mon7.TabIndex = 39;
+            this.check_mon7.Text = "No blackouts";
+            this.check_mon7.UseVisualStyleBackColor = true;
+            this.check_mon7.CheckedChanged += new System.EventHandler(this.check_mon7_CheckedChanged);
+            // 
+            // txt_mon7
+            // 
+            this.txt_mon7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_mon7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_mon7.Location = new System.Drawing.Point(271, 76);
+            this.txt_mon7.Name = "txt_mon7";
+            this.txt_mon7.Size = new System.Drawing.Size(134, 22);
+            this.txt_mon7.TabIndex = 38;
+            this.txt_mon7.TextChanged += new System.EventHandler(this.txt_mon7_TextChanged);
+            // 
+            // lbl_monitor7
+            // 
+            this.lbl_monitor7.AutoSize = true;
+            this.lbl_monitor7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_monitor7.Location = new System.Drawing.Point(268, 60);
+            this.lbl_monitor7.Name = "lbl_monitor7";
+            this.lbl_monitor7.Size = new System.Drawing.Size(66, 13);
+            this.lbl_monitor7.TabIndex = 40;
+            this.lbl_monitor7.Text = "Monitor NB";
             // 
             // lbl_monitor4
             // 
@@ -965,70 +1029,6 @@
             this.previewbox_generate.Size = new System.Drawing.Size(680, 696);
             this.previewbox_generate.TabIndex = 45;
             this.previewbox_generate.Text = "";
-            // 
-            // check_mon7
-            // 
-            this.check_mon7.AutoSize = true;
-            this.check_mon7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_mon7.Location = new System.Drawing.Point(411, 77);
-            this.check_mon7.Name = "check_mon7";
-            this.check_mon7.Size = new System.Drawing.Size(94, 17);
-            this.check_mon7.TabIndex = 39;
-            this.check_mon7.Text = "No blackouts";
-            this.check_mon7.UseVisualStyleBackColor = true;
-            this.check_mon7.CheckedChanged += new System.EventHandler(this.check_mon7_CheckedChanged);
-            // 
-            // txt_mon7
-            // 
-            this.txt_mon7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_mon7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mon7.Location = new System.Drawing.Point(271, 76);
-            this.txt_mon7.Name = "txt_mon7";
-            this.txt_mon7.Size = new System.Drawing.Size(134, 22);
-            this.txt_mon7.TabIndex = 38;
-            this.txt_mon7.TextChanged += new System.EventHandler(this.txt_mon7_TextChanged);
-            // 
-            // lbl_monitor7
-            // 
-            this.lbl_monitor7.AutoSize = true;
-            this.lbl_monitor7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_monitor7.Location = new System.Drawing.Point(268, 60);
-            this.lbl_monitor7.Name = "lbl_monitor7";
-            this.lbl_monitor7.Size = new System.Drawing.Size(58, 13);
-            this.lbl_monitor7.TabIndex = 40;
-            this.lbl_monitor7.Text = "Monitor 7";
-            // 
-            // check_mon8
-            // 
-            this.check_mon8.AutoSize = true;
-            this.check_mon8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.check_mon8.Location = new System.Drawing.Point(411, 119);
-            this.check_mon8.Name = "check_mon8";
-            this.check_mon8.Size = new System.Drawing.Size(94, 17);
-            this.check_mon8.TabIndex = 42;
-            this.check_mon8.Text = "No blackouts";
-            this.check_mon8.UseVisualStyleBackColor = true;
-            this.check_mon8.CheckedChanged += new System.EventHandler(this.check_mon8_CheckedChanged);
-            // 
-            // txt_mon8
-            // 
-            this.txt_mon8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_mon8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_mon8.Location = new System.Drawing.Point(271, 118);
-            this.txt_mon8.Name = "txt_mon8";
-            this.txt_mon8.Size = new System.Drawing.Size(134, 22);
-            this.txt_mon8.TabIndex = 41;
-            this.txt_mon8.TextChanged += new System.EventHandler(this.txt_mon8_TextChanged);
-            // 
-            // lbl_monitor8
-            // 
-            this.lbl_monitor8.AutoSize = true;
-            this.lbl_monitor8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_monitor8.Location = new System.Drawing.Point(268, 102);
-            this.lbl_monitor8.Name = "lbl_monitor8";
-            this.lbl_monitor8.Size = new System.Drawing.Size(58, 13);
-            this.lbl_monitor8.TabIndex = 43;
-            this.lbl_monitor8.Text = "Monitor 8";
             // 
             // atimonanendorsement
             // 

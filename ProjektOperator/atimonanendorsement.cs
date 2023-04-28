@@ -209,8 +209,8 @@ namespace ProjektOperator
               + "\n Monitor 4: " + txt_mon4.Text + " Cameras" 
               + "\n Monitor 5: " + txt_mon5.Text + " Cameras" 
               + "\n Monitor 6: " + txt_mon6.Text + " Cameras"
-              + "\n Monitor 7: " + txt_mon7.Text + " Cameras"
-              + "\n Monitor 8: " + txt_mon8.Text + " Cameras";
+              + "\n Monitor NB: " + txt_mon7.Text + " Cameras"
+              + "\n Monitor SB: " + txt_mon8.Text + " Cameras";
             btn_addcam.Enabled = false;
         }
 
@@ -381,7 +381,13 @@ namespace ProjektOperator
             }
             else
             {
-                previewbox_generate.Text = previewbox_generate.Text + "\n\nCCTV Request: \nRequested by: " + txt_cctv_req.Text + "\nAccompanied by: " + txt_cctv_accompanied.Text + "\nConcern: " + txt_cctv_concern.Text + "\nType of Request: " + txt_cctv_type.Text + "\nLocation: " + txt_cctv_location.Text + "\nWhen: " + txt_cctv_when.Text + "\nAdditional Info: " + txt_cctv_add.Text;
+                previewbox_generate.Text = previewbox_generate.Text + "\n\nCCTV Request: \nRequested by: " + txt_cctv_req.Text 
+                    + "\nAccompanied by: " + txt_cctv_accompanied.Text 
+                    + "\nConcern: " + txt_cctv_concern.Text 
+                    + "\nType of Request: " + txt_cctv_type.Text 
+                    + "\nLocation: " + txt_cctv_location.Text 
+                    + "\nWhen: " + txt_cctv_when.Text 
+                    + "\nAdditional Info: " + txt_cctv_add.Text;
             }
         }
 

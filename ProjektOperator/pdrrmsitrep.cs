@@ -173,7 +173,7 @@ namespace ProjektOperator
             }
             else
             {
-                previewbox_generate.Text = previewbox_generate.Text + "\n\n" + "II. INCIDENT:" + "\nWHAT: " + txt_what.Text + "\n" + "WHEN: " + txt_when.Text + "\n" + "WHERE: " + txt_where.Text + "\n" + "NATURE OF ILLNESS: " + txt_natureofillness.Text + "\n" + "CAUSE OF INJURY: " + txt_cause.Text + "\n" + "VEHICLE/S INVOLVED: " + txt_vehicle.Text + "\n" + "NUMBER OF INJURED: " + txt_numofinjured.Text + "\n" + "RESPONDERS: " + responders + "\n" + "ACTIONS TAKEN: " + txt_actions.Text;
+                previewbox_generate.Text = previewbox_generate.Text + "\n\n" + "II. INCIDENT:" + "\n\nWHAT: " + txt_what.Text + "\n" + "WHEN: " + txt_when.Text + "\n" + "WHERE: " + txt_where.Text + "\n" + "NATURE OF ILLNESS: " + txt_natureofillness.Text + "\n" + "CAUSE OF INJURY: " + txt_cause.Text + "\n" + "VEHICLE/S INVOLVED: " + txt_vehicle.Text + "\n" + "NUMBER OF INJURED: " + txt_numofinjured.Text + "\n" + "RESPONDERS: " + responders + "\n" + "ACTIONS TAKEN: " + txt_actions.Text;
                 txt_what.Text = "";
                 txt_when.Text = "";
                 txt_where.Text = "";
@@ -192,7 +192,7 @@ namespace ProjektOperator
 
         private void btn_addno_Click(object sender, EventArgs e)
         {
-            previewbox_generate.Text = previewbox_generate.Text + "\n\n" + "II. INCIDENT:" + "\nWHAT: NONE \nWHEN: NONE \nWHERE: NONE \nNATURE OF ILLNESS: NONE \nCAUSE OF INJURY: NONE \nVEHICLE/S INVOLVED: NONE \nNUMBER OF INJURED: NONE \nRESPONDERS: NONE \nACTIONS TAKEN: NONE";
+            previewbox_generate.Text = previewbox_generate.Text + "\n\n" + "II. INCIDENT:" + "\n\nWHAT: NONE \nWHEN: NONE \nWHERE: NONE \nNATURE OF ILLNESS: NONE \nCAUSE OF INJURY: NONE \nVEHICLE/S INVOLVED: NONE \nNUMBER OF INJURED: NONE \nRESPONDERS: NONE \nACTIONS TAKEN: NONE";
         }
 
         private void check_power_CheckedChanged(object sender, EventArgs e)
